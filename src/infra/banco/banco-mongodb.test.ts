@@ -8,8 +8,8 @@ describe("Banco em memória",()=>{
             descricao:"test",
             foto:"test",
         }
-        const BancoMongoDB = new BancoMongoDB();
-        const result = await BancoMongoDB.salvar(input)
+        const bancoMongoDB = new BancoMongoDB();
+        const result = await bancoMongoDB.salvar(input)
         expect(result).toBe(true)
     })
 })
