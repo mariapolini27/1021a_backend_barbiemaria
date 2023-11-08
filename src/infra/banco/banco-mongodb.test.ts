@@ -1,7 +1,7 @@
 import {describe,test,expect} from 'vitest'
 import BancoMongoDB from './banco-mongodb'
-describe("Banco em memória",()=>{
-    test("Deve salvar no banco em memória",async ()=>{
+describe("Banco MongoDB",()=>{
+    test("Deve salvar no banco MongoDB",async ()=>{
         const input= {
             id:1,
             titulo:"test",
