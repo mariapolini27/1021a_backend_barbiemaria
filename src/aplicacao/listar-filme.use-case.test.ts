@@ -20,7 +20,7 @@ describe("Listar filme",()=>{
             }
         ]
         const listarFilme = new ListarFilme(bancoEmMemoria)
-        const result = await listarFilme.listar()
+        const result = await listarFilme.execute()
         expect(result.length).toBe(2)
         expect(result[0].id).toBe(1)
         expect(result[1].id).toBe(2)
